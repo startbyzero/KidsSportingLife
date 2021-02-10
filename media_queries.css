@@ -1,0 +1,487 @@
+*
+{
+    box-sizing: border-box;
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    text-decoration: none;
+}
+body
+{
+    margin:0;
+    padding:0;
+    line-height: 1.4;
+    font-family: 'Arial';
+  
+}
+.container
+{
+    width: 530px;
+    margin: auto; 
+}
+.logo
+{
+    display: block;
+    width: 60px;
+    cursor: pointer;
+}
+.main_title
+{
+    color:  rgb(254, 75, 10);
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: .8rem;
+}
+
+/* nav li child  */
+.gold_fixed
+{
+   border: 2px solid gold;
+   padding: 5px;
+   
+}
+
+/* start header */
+header
+{
+    background-color: rgba(7, 59, 123);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-size: .6rem;
+}
+header nav 
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px;
+}
+header nav #login
+{
+    align-self:flex-end;
+    text-transform: uppercase;
+    padding: 5px;
+    border: solid 2px rgb(254, 75, 10);
+    color: white;
+}
+
+header nav ul 
+{
+    display:flex;
+    
+}
+header nav ul li 
+{
+    margin: 2px;
+    padding: 5px;
+    text-transform: uppercase;   
+}
+a
+{
+    color: white;
+}
+/* slideshow */
+.slideshow
+{
+    position: relative;   
+}
+.slide
+{
+    display: none;
+    width: 100%;
+    max-height: 400px;
+}
+.slide:nth-child(1)
+{
+    display: block;
+}
+/* Maincards */
+.maincards
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    font-size: .8rem;
+}
+/* card */
+.card
+{
+    border:solid black 1px;
+    margin:20px;
+    border-radius:15px;
+    text-align: center;
+
+}
+.card h2,i,p
+{
+    margin:0px !important;
+}
+
+.fa-futbol
+{
+    color: rgba(7, 59, 123);
+    
+}
+.fa-swimmer
+{
+    color: rgb(0, 247, 255);
+}
+.fa-table-tennis
+{
+    color: brown;
+}
+/* buttons */
+.btn_light
+{
+    padding:10px;
+    margin:10px;
+    background:rgba(7, 59, 123) ;
+    color:white;
+    cursor: pointer;
+    border: none;
+    font-size: .6rem;
+}
+.btn_light:hover
+{
+ background:rgba(7, 59, 123, 0.753);
+}
+
+/* footer */
+footer
+{
+    background:rgb(254, 75, 10);
+    height: 30vh;
+    
+    
+}
+.sponsor img
+{
+   width: 100px;
+   display: none;
+  
+}
+.boxes
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.boxes .box
+{
+    margin: 50px;
+    font-size: .8rem;
+}
+.sponsor2 img
+{
+    margin: 10px;
+    display: none;
+}
+
+/* sub footer */
+.sub_footer
+{
+    background: rgb(0, 0, 0,0.9);
+    color:white;
+    font-size: .8rem;
+   
+}
+/* form  */
+form
+{
+    margin-top: 10px;
+}
+.btn,input
+{
+    display: block;
+    width: 100%;
+    margin: 10px;
+    padding:6px;
+    cursor: pointer;
+    font-size: .6rem;
+}
+input::placeholder
+{
+    text-align: center;
+}
+.btn
+{
+    background:rgba(7, 59, 123);
+    color:white;
+    border: none;
+   
+}
+.btn:hover
+{
+    background:rgba(7, 59, 123, 0.753);
+}
+/* End form */
+
+/* Start social media */
+
+.social_media i
+{
+  margin-top: 10px !important;
+}
+.fa-instagram 
+{
+  text-align: center;
+  border-radius: 40px;
+  color: #fff;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  cursor: pointer;
+}
+.fa-facebook-square
+{
+  border-radius: 40px;
+  background-color: #3b5999;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.39);
+  cursor: pointer;
+  color:white;
+}
+.fa-youtube
+{
+    background: rgb(255, 0, 0);
+    border-radius: 40px;
+    box-shadow: 0px 3px 10px (0, 0, 0, 0.178);
+    cursor: pointer;
+    color:white;
+}
+.fa-linkedin
+{
+  border-radius: 40px;
+  background-color: rgb(10, 102, 194);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.39);
+  cursor: pointer;
+  color:white;
+}
+.fab
+{
+    padding:10px;
+    
+}
+/* End social media */
+
+/* Start newsletter */
+.newsletter,#result
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    font-size: x-large;
+    color: green;
+}
+/* Start newsletter */
+
+/* End Home Page  */
+
+
+/* Next page activities */
+.activities
+{
+    display: flex;
+    flex-direction: column;
+    font-size: .8rem;
+}
+.case1
+{
+    background-image: url("/indoor.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;  
+    
+}
+.case2
+{
+    background-image: url("/outdoor.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;  
+   
+}
+.show_case_content
+{  
+    padding:10px;
+    margin: 10px;
+}
+.show_case_content p,h2
+{
+    margin:5px;
+    padding:5px;
+    text-align: center; 
+}
+
+/* End page activities */
+
+/* Start charity page*/
+.charity
+{
+   display: block;
+   flex-direction: column;
+   
+ 
+}
+.charity_pic
+{
+    background-image: url("/donate.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    border-radius: 50%;   
+    margin: 20px 0px 20px 60px; 
+   
+}
+.charity_content
+{
+    text-align: center;
+    border: solid rgb(254, 75, 10) .5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    
+}
+.charity_content h2,p
+{
+    margin: 5px;
+}
+/* End charity page*/
+
+/* Start Contact us page*/
+.contactus
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   margin: 5px;
+}
+.contact_form form
+{
+   width: 500px;
+   border: solid black 1px;
+   padding: 20px;
+   background: cornsilk;
+   margin: 20px 0px 20px 30px;
+}
+.contact_form form label
+{
+    font-size: 0.8rem;
+}
+
+/* End Contact us page*/
+
+/* Start Cards Activities indoor */
+.activities_page2
+{
+   display: flex;
+   flex-direction: column;
+   font-size: 0.8rem;
+   
+}
+.yoga
+{
+    background-image: url("/yoga.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;  
+}
+.judo
+{
+    background-image: url("/judo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;  
+}
+.table_tennis
+{
+    background-image: url("/tabletennis.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;  
+}
+.swimming
+{
+    background-image: url("/swimming.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;  
+}
+.show_case_content
+{  
+    padding:10px;
+    margin: 10px;
+}
+.show_case_content p,h2
+{
+    margin:5px;
+    padding:5px;
+    text-align: center; 
+}
+/* End Cards Activities indoor */
+
+/* Start Cards Activities outdoor */
+.activities_page3
+{
+   display: flex;
+   flex-direction: column;
+   font-size: 0.8rem;
+}
+.zoo
+{
+    background-image: url("/zoo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;  
+}
+.climb
+{
+    background-image: url("/climb.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;  
+}
+.football
+{
+    background-image: url("/football.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;  
+}
+.nature
+{
+    background-image: url("/nature.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;  
+}
+.show_case_content
+{  
+    padding:10px;
+    margin: 10px;
+}
+.show_case_content p,h2
+{
+    margin:5px;
+    padding:5px;
+    text-align: center; 
+}
+/* End Cards Activities outdoor */
+
+
+
+
+
